@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoria - Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-div">
+      <div class="form-div">
+        <div>
+          <div class="input-text-div">
+            <label for="username">Username</label>
+            <input
+              required
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter username"
+            />
+            <label for="password">Password</label>
+            <input
+              required
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter password"
+              aria-label="Your password is between 4 and 12 characteres"
+            />
+            <label for="textinput">Input Text Label</label>
+            <input type="text" name="textinput" id="textinput" required />
+          </div>
+
+          <div class="input-checkbox-div">
+            <input type="checkbox" name="remember" id="remember" />
+            <label for="remember">Remember Me</label>
+          </div>
+
+          <div class="switch-div">
+            <label class="switch">
+              <input type="checkbox"  id="slider"/>
+              <span class="slider"></span>
+            </label>
+              <p class="text-slider">Off</p>
+          </div>
+
+          <div class="input-radio-div">
+            <div>
+              <input type="radio" name="selection" id="radio1" />
+              <label for="radio1">Radio Selection 1</label>
+            </div>
+            <div>
+              <input type="radio" name="selection" id="radio2" />
+              <label for="radio2">Radio Selection 2</label>
+            </div>
+            <div>
+              <input type="radio" name="selection" id="radio3" />
+              <label for="radio3">Radio Selection 3</label>
+            </div>
+          </div>
+
+          <div class="dropdown-input">
+            <label class="dropdown-label">Dropdown Title</label>
+            <div class="dropdown">
+              <div class="dropdown-selected">Dropdown option</div>
+              <ul class="dropdown-list">
+                <li class="dropdown-item" data-value="0">Dropdown option</li>
+                <li class="dropdown-item" data-value="1">Dropdown option 1</li>
+                <li class="dropdown-item" data-value="2">Dropdown option 2</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="button">
+            <button type="button" class="cancel-btn">Cancel</button>
+            <button type="button" class="next-btn">Next</button>
+          </div>
+        </div>
+      </div>
+      <script src="./formulario.js"></script>
+    </main>
+  </body>
+</html>
